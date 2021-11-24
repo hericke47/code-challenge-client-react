@@ -4,7 +4,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <header>
+    <header style={{textAlign: 'center'}}>
       <h1>SensorTech</h1>
     </header>
     <App />
