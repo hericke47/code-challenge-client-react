@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Header from '../../components/Header';
 import TableTemperature from '../../components/TableTemperature';
 import { temperatureData } from '../../utils/checkTemperatureData'
 import { Container } from './styles'
@@ -28,12 +29,15 @@ function Main() {
   }, []);
 
   return (
+    <>
+    <Header />
     <Container className="App">
       <h2>Beers</h2>
       {items && (
         <TableTemperature items={items} />
       )}
     </Container>
+    </>
   );
 }
 
